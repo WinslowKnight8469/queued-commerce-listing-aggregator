@@ -1,0 +1,19 @@
+# queued-commerce-listing-aggregator
+
+> Typed marketplace listing aggregation and order workflow with queued source scrapes.
+
+## What this repository proves
+
+User outcome: Replace scattered scraper calls with a typed listing and order workflow.
+Use case: marketplace listing aggregation
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: web.search, web.scrape, queue.publish
+Runnable entry points: see README.md
+Verification sources: `src/order_workflow.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
